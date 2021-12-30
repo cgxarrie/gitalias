@@ -1,4 +1,4 @@
-# gitlias
+# gitalias
 A bunch of useful git aliases to add to .gitignore to boost productivity
 
  - chs branchname : Checnkout local branch; show status
