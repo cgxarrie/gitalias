@@ -1,0 +1,5 @@
+[alias]
+	chs = "!f() { git checkout $(git branch | grep $1); git status; }; f"
+	chp = "!f() { git checkout $(git branch | grep $1); git pull;}; f"
+	sqash = "!f() { git reset $(git merge-base $1 $(git branch --show-current)); git add -A; tgit commit -m $(git rev-parse --abbrev-ref HEAD); git log -1; }; f"
+	chkup = "!f() { git checkout -b $1; git push --set-upstream origin $1;}; f"
