@@ -1,7 +1,43 @@
 # gitalias
 A bunch of useful git aliases to add to .gitignore to boost productivity
 
- - chs branchname : Checnkout local branch; show status
- - chp branchname : Checnkout local branch; pull
- - sqash branchname : Squashes the local branch based on branchname, creates a commit with the local branchname as comment.
- - chkup branchname : Creates local branch and sets upstream to origin branch with same name
+In all commands below branchname is part of the name of a branch that is no repeated in any other branch name.
+i.e. Given the following branch structure, see the branhcnames to use
+
+| to use this branch    | use this branch name  |
+|-----------------------|-----------------------|
+| master                | master                |
+| develop               | develop               |
+| feat/0010-feature1    | 0010                  |
+| feat/0020-feature2    | 0020-                 |
+| feat/0020/0022-task22 | 0022                  |
+
+### name branchname
+ - display the name of the branch that matches branchname criteria
+
+ ### chs branchname
+ - Checnkout local branch
+ - show status
+ 
+ ### chp branchname
+ - Checnkout local branch
+ - pull
+
+### sqash branchname
+ - Squashes the local branch based on branchname
+ - creates a commit with the local branchname as comment.
+
+### chkup branchname  (full branch name)
+ - Creates local branch
+ - sets upstream to origin branch with same name
+
+### up
+ - sets upstream to origin branch with same name for current local branch
+ - push current local branch
+
+### reb branchname
+ - rebase current local branch on branchname
+
+### mer branchname
+ - pull branchname
+ - merge branchname into current local branch
