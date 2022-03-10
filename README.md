@@ -35,9 +35,9 @@ i.e. Given the following branch structure, see the branhcnames to use
  - sets upstream to origin branch with same name for current local branch
  - push current local branch
 
-### reb branchname
+### rbs branchname
  - rebase current local branch on branchname
 
-### mer branchname
+### mrg branchname
  - pull branchname
  - merge branchname into current local branch
