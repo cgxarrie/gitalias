@@ -4,6 +4,6 @@
 	sqash = "!f() { git reset $(git merge-base $(git branch | grep $1) $(git branch --show-current)); git add -A; tgit commit -m $(git rev-parse --abbrev-ref HEAD); git log -1; }; f"
 	up = "!f() { git push --set-upstream origin $(git branch --show-current);}; f"
 	chkup = "!f() { git checkout -b $1; git push --set-upstream origin $1;}; f"
-	rbs = "!f() { git rebase $(git branch | grep $1); git status; }; f"	
+	rbs = "!f() { git pull origin $(git branch | grep $1); git rebase $(git branch | grep $1); git status; }; f"	
 	mrg = "!f() { git pull origin $(git branch | grep $1); git merge $(git branch | grep $1); git status; }; f"
 	name = "!f() { git branch | grep $1; }; f"
