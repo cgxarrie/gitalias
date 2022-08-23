@@ -12,6 +12,9 @@ i.e. Given the following branch structure, see the branhcnames to use
 | feat/0020-feature2    | 0020-                 |
 | feat/0020/0022-task22 | 0022                  |
 
+### ca
+- Add currently staged files to previous local commit without changing the commit message
+
 ### name branchname
  - display the name of the branch that matches branchname criteria
 
