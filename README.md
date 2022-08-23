@@ -15,6 +15,9 @@ i.e. Given the following branch structure, see the branhcnames to use
 ### ca
 - Add currently staged files to previous local commit without changing the commit message
 
+### branchname
+- creates a local branch for each remote branch that matches the branchname criteria
+
 ### name branchname
  - display the name of the branch that matches branchname criteria
 
