@@ -8,3 +8,4 @@
 	mrg = "!f() { git pull origin $(git branch | grep $1); git merge $(git branch | grep $1); git status; }; f"
 	name = "!f() { git branch | grep $1; }; f"
 	ca = "!f() {git commit --amend --no-edit}; f"
+	sw = "!f() { for br in $(git branch -a | grep origin | grep $1); do git switch ${br#"remotes/origin/"}; done; git branch; }; f"
