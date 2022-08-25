@@ -16,7 +16,8 @@ i.e. Given the following branch structure, see the branhcnames to use
 - Add currently staged files to previous local commit without changing the commit message
 
 ### ca "commit message"
-- commits all staged and unstaged changes with message "commit message"
+- Staged all unstaged changes
+- commit with commit message
 
 ### sw branchname
 - creates a local branch for each remote branch that matches the branchname criteria
