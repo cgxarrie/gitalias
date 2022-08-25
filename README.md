@@ -12,10 +12,13 @@ i.e. Given the following branch structure, see the branhcnames to use
 | feat/0020-feature2    | 0020-                 |
 | feat/0020/0022-task22 | 0022                  |
 
-### ca
+### amd
 - Add currently staged files to previous local commit without changing the commit message
 
-### branchname
+### ca "commit message"
+- commits all staged and unstaged changes with message "commit message"
+
+### sw branchname
 - creates a local branch for each remote branch that matches the branchname criteria
 
 ### name branchname
