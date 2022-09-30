@@ -61,3 +61,8 @@ i.e. Given the following branch structure, see the branhcnames to use
 | short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
 | short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
 | short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
+ 
+ ### lgone
+ - list all local branches tracked to deleted remote branches
+ ### dgone
+  - delete all local branches tracked to deleted remote branches
