@@ -11,5 +11,5 @@
 	sw = "!f() { for br in $(git branch -a | grep origin | grep $1); do git switch ${br#"remotes/origin/"}; done; git branch; }; f"
 	ca = "!f() { git add .; git commit -m \"$1\";  }; f"
 	lg = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $1; }; f"
-	lgone = "!f() { git branch -vv | grep ': gone]' | awk '{ print $1 }'; }; f"
-	dgone = "!f() { git branch -vv | grep ': gone]' | awk '{ print $1 }' | xargs -r git branch -D; }; f"
+	lgone = "!f() { git fetch -p; git branch -vv | grep ': gone]' | awk '{ print $1 }'; }; f"
+	dgone = "!f() { git fetch -p; git branch -vv | grep ': gone]' | awk '{ print $1 }' | xargs -r git branch -D; }; f"
