@@ -51,3 +51,13 @@ i.e. Given the following branch structure, see the branhcnames to use
 ### mrg branchname
  - pull branchname
  - merge branchname into current local branch
+
+### lg -n
+ - one liner log as follows ( n is the number of entries. leave blank for complete log)
+
+| |
+|-----------------------|
+| short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
+| short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
+| short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
+| short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
