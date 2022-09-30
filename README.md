@@ -63,6 +63,8 @@ i.e. Given the following branch structure, see the branhcnames to use
 | short-commit-hash - (branch-name) commit-message (time-ago) <user-name> |
  
  ### lgone
+ - prune remote
  - list all local branches tracked to deleted remote branches
  ### dgone
-  - delete all local branches tracked to deleted remote branches
+ - prune remote
+ - delete all local branches tracked to deleted remote branches
