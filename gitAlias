@@ -10,3 +10,4 @@
 	amd = "!f() { git commit --amend --no-edit; }; f"
 	sw = "!f() { for br in $(git branch -a | grep origin | grep $1); do git switch ${br#"remotes/origin/"}; done; git branch; }; f"
 	ca = "!f() { git add .; git commit -m \"$1\";  }; f"
+	lg = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $1; }; f"
